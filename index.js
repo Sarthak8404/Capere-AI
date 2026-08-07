@@ -3,6 +3,7 @@
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
+  initStickyHeader();
   initMobileMenu();
   initFaqAccordion();
   initRoiCalculator();
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initDemoModal();
   initHeroSlideshow();
   initScrollReveal();
+  initOnboardingTimeline();
 });
 
 /* ==========================================================================
@@ -233,39 +235,18 @@ function initDemoModal() {
   }
 }
 
-function openDemoModal(packageName = "Capere AI Growth System") {
-  const modal = document.getElementById("demo-modal");
-  const packageSelect = document.getElementById("form-package");
-  const successScreen = document.getElementById("form-success-message");
-  const form = document.getElementById("booking-form");
-  
-  if (modal) {
-    modal.classList.add("active");
-    document.body.style.overflow = "hidden";
-    
-    if (successScreen) successScreen.style.display = "none";
-    if (form) form.style.display = "block";
-    
-    if (packageSelect) {
-      packageSelect.value = packageName;
-    }
+function openDemoModal() {
+  const bookingSection = document.getElementById("book-call");
+  if (bookingSection) {
+    bookingSection.scrollIntoView({ behavior: "smooth" });
   }
 }
 
 function closeDemoModal() {
-  const modal = document.getElementById("demo-modal");
-  if (modal) {
-    modal.classList.remove("active");
-    document.body.style.overflow = "";
-  }
+  // Stub function to prevent reference errors from inline tags
 }
 
-window.addEventListener("click", (e) => {
-  const modal = document.getElementById("demo-modal");
-  if (e.target === modal) {
-    closeDemoModal();
-  }
-});
+
 
 function selectTimeSlot(button) {
   const slots = button.parentElement.querySelectorAll(".time-slot");
@@ -277,20 +258,61 @@ function selectTimeSlot(button) {
 function handleBookingSubmit(event) {
   event.preventDefault();
   
+  const form = document.getElementById("booking-form");
+  const successScreen = document.getElementById("form-success-message");
+  const submitBtn = form ? form.querySelector("button[type='submit']") : null;
+  
+  if (!form || !successScreen) return;
+  
+  const businessName = document.getElementById("form-business-name").value;
   const name = document.getElementById("form-name").value;
   const phone = document.getElementById("form-phone").value;
   const business = document.getElementById("form-business").value;
   const date = document.getElementById("form-date").value;
   
-  console.log("DEMO RESERVED:", { name, phone, business, date });
-  
-  const form = document.getElementById("booking-form");
-  const successScreen = document.getElementById("form-success-message");
-  
-  if (form && successScreen) {
-    form.style.display = "none";
-    successScreen.style.display = "flex";
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Booking...";
   }
+  
+  fetch("https://formspree.io/f/mpqvbqra", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      business_name: businessName,
+      name: name,
+      phone: phone,
+      business: business,
+      date: date
+    })
+  })
+  .then(response => {
+    if (response.ok) {
+      form.style.display = "none";
+      successScreen.style.display = "flex";
+    } else {
+      return response.json().then(data => {
+        if (Object.hasOwnProperty.call(data, 'errors')) {
+          alert(data.errors.map(error => error.message).join(", "));
+        } else {
+          alert("Oops! There was a problem submitting your form.");
+        }
+      });
+    }
+  })
+  .catch(error => {
+    alert("Oops! There was a problem submitting your form.");
+    console.error("Formspree error:", error);
+  })
+  .finally(() => {
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Book My Free Strategy Call";
+    }
+  });
 }
 
 /* ==========================================================================
@@ -382,4 +404,69 @@ function initScrollReveal() {
   });
 
   revealElements.forEach(el => observer.observe(el));
+}
+
+/* ==========================================================================
+   Interactive Onboarding Timeline Dot Tracking
+   ========================================================================== */
+function initOnboardingTimeline() {
+  const wrapper = document.querySelector(".minimal-timeline-wrapper");
+  const rows = document.querySelectorAll(".timeline-row");
+  const indicator = document.querySelector(".timeline-indicator-dot");
+  
+  if (!wrapper || !indicator || rows.length === 0) return;
+  
+  function updatePosition(row) {
+    const wrapperRect = wrapper.getBoundingClientRect();
+    const dot = row.querySelector(".marker-dot");
+    if (!dot) return;
+    
+    const dotRect = dot.getBoundingClientRect();
+    // Calculate top relative to the timeline wrapper container
+    const relativeTop = (dotRect.top - wrapperRect.top) + (dotRect.height / 2) - 6; // subtracting half height of indicator (6px)
+    
+    indicator.style.top = `${relativeTop}px`;
+    
+    if (row.classList.contains("live-row")) {
+      indicator.style.backgroundColor = "var(--green)";
+      indicator.style.boxShadow = "0 0 12px rgba(16, 185, 129, 0.8)";
+    } else {
+      indicator.style.backgroundColor = "var(--accent)";
+      indicator.style.boxShadow = "0 0 10px rgba(255, 116, 41, 0.6)";
+    }
+  }
+  
+  // Set initial position to Day 1 dot
+  setTimeout(() => {
+    updatePosition(rows[0]);
+  }, 100);
+  
+  // Update position on hover
+  rows.forEach(row => {
+    row.addEventListener("mouseenter", () => {
+      updatePosition(row);
+    });
+  });
+  
+  // Recalculate on window resize to ensure alignment holds
+  window.addEventListener("resize", () => {
+    const activeRow = document.querySelector(".timeline-row:hover") || rows[0];
+    updatePosition(activeRow);
+  });
+}
+
+/* ==========================================================================
+   Sticky Header Dynamic Scroll Effect
+   ========================================================================== */
+function initStickyHeader() {
+  const header = document.getElementById("navbar");
+  if (header) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 20) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  }
 }

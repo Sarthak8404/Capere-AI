@@ -1,559 +1,1118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Capere AI - Local SEO Growth Platform & Business OS</title>
-  <meta name="description" content="Dominate local search. Capere AI combines a programmatic Local Growth Engine with a complete Business Operating System to turn visibility into booked revenue.">
-  
-  <!-- Favicon -->
-  <!-- <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>" type="image/x-icon"> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capere AI - Helping Local Businesses Capture Growth with AI.</title>
+    <meta
+      name="description"
+      content="Dominate local search. Capere AI combines a programmatic Local Growth Engine with a complete Business Operating System to turn visibility into booked revenue."
+    />
 
-  <!-- Fonts (Google Fonts) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Geist:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-  <link rel="shortcut icon" href="assets/favicon_io/favicon.ico" type="image/x-icon">
-  <link rel="manifest" href="assets/favicon_io/site.webmanifest">
-  <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  
-  <!-- Navigation Header -->
-  <header class="header" id="navbar">
-    <div class="nav-container">
-      <a href="#" class="logo-link">
-        <img src="assets/logo.png" alt="Capere AI logo mark" class="logo-icon-img">
-        <span class="logo-text">apere <span class="accent-text">AI</span></span>
-      </a>
-      <div class="nav-menu-labels">
-        <!-- <a href="#open-letter" class="nav-label-link">Open Letter</a> -->
-        <a href="#why-convert" class="nav-label-link">Why Convert</a>
-        <a href="#simulator-section" class="nav-label-link">Lead Recovery</a>
-        <a href="#roi-calculator" class="nav-label-link">ROI Calculator</a>
-        <a href="#pricing" class="nav-label-link">Pricing</a>
-        <a href="#faq" class="nav-label-link">FAQ</a>
-      </div>
-      <button class="btn btn-primary btn-small" onclick="openDemoModal()">Book Demo</button>
-    </div>
-  </header>
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>" type="image/x-icon"> -->
 
-  <main class="main-wrapper">
-    
-    <!-- Hero Section -->
-    <section class="hero-section" id="hero">
-      <!-- Custom image background with low opacity & f2f2f2 fade -->
-      <div class="hero-image-bg-wrapper">
-        <img src="assets/hero-section-bg.png" alt="Hero background visual" class="hero-image-bg">
+    <!-- Fonts (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fasthand&family=Geist:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest" />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="index.css?v=1.0.4" />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="header" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo-link">
+          <img
+            src="assets/logo.png"
+            alt="Capere AI logo mark"
+            class="logo-icon-img"
+          />
+          <span class="logo-text">apere <span class="accent-text">AI</span></span>
+        </a>
+        <div class="nav-menu-labels">
+          <!-- <a href="#open-letter" class="nav-label-link">Open Letter</a> -->
+          <a href="#why-convert" class="nav-label-link">Why Convert</a>
+          <a href="#simulator-section" class="nav-label-link">Lead Recovery</a>
+          <a href="#roi-calculator" class="nav-label-link">ROI Calculator</a>
+          <a href="#pricing" class="nav-label-link">Pricing</a>
+          <a href="#onboarding" class="nav-label-link">Our Process</a>
+          <a href="#faq" class="nav-label-link">FAQ</a>
+        </div>
+        <button class="btn btn-primary btn-small" onclick="openDemoModal()">
+          Book a Strategy Call
+        </button>
       </div>
-      
-      <!-- Faint glowing background blobs to add modern depth -->
-      <div class="hero-bg-orb orange reveal-zoom"></div>
-      <div class="hero-bg-orb blue reveal-zoom reveal-delay-1"></div>
-      <div class="bg-grid-container">
-        <div class="bg-grid-line-v" style="left: 0%;"></div>
-        <div class="bg-grid-line-v" style="left: 25%;"></div>
-        <div class="bg-grid-line-v" style="left: 50%;"></div>
-        <div class="bg-grid-line-v" style="left: 75%;"></div>
-        <div class="bg-grid-line-v" style="left: 100%;"></div>
-        <div class="bg-grid-line-h" style="top: 20%;"></div>
-        <div class="bg-grid-line-h" style="top: 50%;"></div>
-        <div class="bg-grid-line-h" style="top: 80%;"></div>
-        <div class="bg-grid-box" style="left: 40px; bottom: 6%;"></div>
-        <div class="bg-grid-box" style="right: 40px; bottom: 12%;"></div>
-        <div class="bg-grid-box" style="left: 50%; bottom: 4%; transform: translateX(-50%);"></div>
-      </div>
-      <div class="container hero-container">
-        <div class="hero-grid-layout">
-          
-          <!-- Hero Left Column: Content -->
-          <div class="hero-content-left">
-            <span class="cursive-tagline reveal-left" id="hero-tagline">Win More Local Customers</span>
-            <h1 class="hero-title reveal-left reveal-delay-1" id="hero-main-title">
-              Don't Just Get Found.<br>
-              Get Chosen.
-            </h1>
-            <p class="hero-subtitle reveal-left reveal-delay-2" id="hero-sub">
-              Capere AI is the growth foundation that helps local service businesses <strong>turn more local searches into paying customers—making every future marketing investment work harder.</strong>
-            </p>
+    </header>
 
-            <div class="hero-cta-group reveal-left reveal-delay-3">
-              <button class="btn btn-primary" id="hero-primary-cta" onclick="openDemoModal()">Book a Demo</button>
-              <a href="#roi-calculator" class="btn btn-secondary" id="hero-secondary-cta">
-                <span>Calculate Your ROI</span>
-                <svg class="btn-arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+    <main class="main-wrapper">
+      <!-- Hero Section -->
+      <section class="hero-section" id="hero">
+        <!-- Custom image background with low opacity & f2f2f2 fade -->
+        <div class="hero-image-bg-wrapper">
+          <img
+            src="assets/hero-section-bg.png"
+            alt="Hero background visual"
+            class="hero-image-bg"
+          />
+        </div>
+
+        <!-- Faint glowing background blobs to add modern depth -->
+        <div class="hero-bg-orb orange reveal-zoom"></div>
+        <div class="hero-bg-orb blue reveal-zoom reveal-delay-1"></div>
+        <div class="bg-grid-container">
+          <div class="bg-grid-line-v" style="left: 0%"></div>
+          <div class="bg-grid-line-v" style="left: 25%"></div>
+          <div class="bg-grid-line-v" style="left: 50%"></div>
+          <div class="bg-grid-line-v" style="left: 75%"></div>
+          <div class="bg-grid-line-v" style="left: 100%"></div>
+          <div class="bg-grid-line-h" style="top: 20%"></div>
+          <div class="bg-grid-line-h" style="top: 50%"></div>
+          <div class="bg-grid-line-h" style="top: 80%"></div>
+          <div class="bg-grid-box" style="left: 40px; bottom: 6%"></div>
+          <div class="bg-grid-box" style="right: 40px; bottom: 12%"></div>
+          <div
+            class="bg-grid-box"
+            style="left: 50%; bottom: 4%; transform: translateX(-50%)"
+          ></div>
+        </div>
+        <div class="container hero-container">
+          <div class="hero-grid-layout">
+            <!-- Hero Left Column: Content -->
+            <div class="hero-content-left">
+              <span class="cursive-tagline reveal-left" id="hero-tagline"
+                >Capture More Customers. Automatically.</span
+              >
+              <h1
+                class="hero-title reveal-left reveal-delay-1"
+                id="hero-main-title"
+              >
+                Don't Just Get Found.<br />
+                Get Chosen.
+              </h1>
+              <p class="hero-subtitle reveal-left reveal-delay-2" id="hero-sub">
+                Capere AI is the growth foundation that helps local service
+                businesses
+                <strong
+                  >turn more local searches into paying customers—making every
+                  future marketing investment work harder.</strong
+                >
+              </p>
+
+              <div class="hero-cta-group reveal-left reveal-delay-3">
+                <button
+                  class="btn btn-primary"
+                  id="hero-primary-cta"
+                  onclick="openDemoModal()"
+                >
+                  Book a Strategy Call
+                </button>
+                <a
+                  href="#roi-calculator"
+                  class="btn btn-secondary"
+                  id="hero-secondary-cta"
+                >
+                  <span>Calculate Your ROI</span>
+                  <svg
+                    class="btn-arrow-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="hero-ticker-wrapper reveal-left reveal-delay-4">
+                <div class="hero-ticker-fade left"></div>
+                <div class="hero-ticker-track">
+                  <div class="hero-ticker-group">
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                        ></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      <span>Local SEO Engine</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"
+                        ></path>
+                        <path
+                          d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"
+                        ></path>
+                        <path
+                          d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"
+                        ></path>
+                        <path d="M10 6h4"></path>
+                        <path d="M10 10h4"></path>
+                        <path d="M10 14h4"></path>
+                        <path d="M10 18h4"></path>
+                      </svg>
+                      <span>Google Business Profile</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span>AI Chat Assistant</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                        ></path>
+                        <line x1="23" y1="1" x2="17" y2="7"></line>
+                        <line x1="17" y1="1" x2="23" y2="7"></line>
+                      </svg>
+                      <span>Missed Call Recovery</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect
+                          x="3"
+                          y="4"
+                          width="18"
+                          height="18"
+                          rx="2"
+                          ry="2"
+                        ></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                      </svg>
+                      <span>Smart Booking</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                        ></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                      </svg>
+                      <span>Unified CRM</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <span>Review Management</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polygon
+                          points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+                        ></polygon>
+                      </svg>
+                      <span>Workflow Automation</span>
+                    </div>
+                  </div>
+                  <!-- Duplicate group for seamless looping scroll -->
+                  <div class="hero-ticker-group" aria-hidden="true">
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                        ></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      <span>Local SEO Engine</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"
+                        ></path>
+                        <path
+                          d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"
+                        ></path>
+                        <path
+                          d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"
+                        ></path>
+                        <path d="M10 6h4"></path>
+                        <path d="M10 10h4"></path>
+                        <path d="M10 14h4"></path>
+                        <path d="M10 18h4"></path>
+                      </svg>
+                      <span>Google Business Profile</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span>AI Chat Assistant</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                        ></path>
+                        <line x1="23" y1="1" x2="17" y2="7"></line>
+                        <line x1="17" y1="1" x2="23" y2="7"></line>
+                      </svg>
+                      <span>Missed Call Recovery</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect
+                          x="3"
+                          y="4"
+                          width="18"
+                          height="18"
+                          rx="2"
+                          ry="2"
+                        ></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                      </svg>
+                      <span>Smart Booking</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                        ></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                      </svg>
+                      <span>Unified CRM</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <span>Review Management</span>
+                    </div>
+                    <div class="ticker-chip">
+                      <svg
+                        class="ticker-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polygon
+                          points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+                        ></polygon>
+                      </svg>
+                      <span>Workflow Automation</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-ticker-fade right"></div>
+              </div>
+            </div>
+
+            <!-- Hero Right Column: Slideshow -->
+            <div class="hero-slideshow-right reveal-right reveal-delay-2">
+              <div class="slideshow-container">
+                <div class="hero-slide active">
+                  <img
+                    src="assets/HVAC%20Contractor.jpg"
+                    alt="HVAC Contractor Services"
+                  />
+                  <span class="slide-caption">HVAC & Comfort Services</span>
+                </div>
+                <div class="hero-slide">
+                  <img
+                    src="assets/Cosmetic%20Dentist.jpg"
+                    alt="Cosmetic Dentist Services"
+                  />
+                  <span class="slide-caption">Dental & Oral Practice</span>
+                </div>
+                <div class="hero-slide">
+                  <img
+                    src="assets/personal-injury.jpg"
+                    alt="Personal Injury Law Services"
+                  />
+                  <span class="slide-caption">Legal & Counsel Firms</span>
+                </div>
+                <div class="hero-slide">
+                  <img src="assets/CPA.jpg" alt="CPA & Accounting Services" />
+                  <span class="slide-caption">Accounting & Tax Advisory</span>
+                </div>
+                <div class="hero-slide">
+                  <img
+                    src="assets/Physical%20Therapist.jpg"
+                    alt="Physical Therapist Services"
+                  />
+                  <span class="slide-caption">Physical Therapy & Health</span>
+                </div>
+
+                <!-- Slide dot indicators -->
+                <div class="slideshow-dots">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Open Letter Section -->
+      <section class="open-letter-section" id="open-letter">
+        <div class="bg-grid-container">
+          <div class="bg-grid-line-v" style="left: 0%"></div>
+          <div class="bg-grid-line-v" style="left: 25%"></div>
+          <div class="bg-grid-line-v" style="left: 50%"></div>
+          <div class="bg-grid-line-v" style="left: 75%"></div>
+          <div class="bg-grid-line-v" style="left: 100%"></div>
+          <div class="bg-grid-line-h" style="top: 30%"></div>
+          <div class="bg-grid-line-h" style="top: 70%"></div>
+          <div class="bg-grid-box" style="right: -80px; top: 15%"></div>
+          <div class="bg-grid-box" style="left: -120px; top: 55%"></div>
+        </div>
+        <div class="container">
+          <div class="open-letter-wrapper">
+            <div class="section-title-wrapper reveal">
+              <div class="cursive-tagline content-sub-title">Open Letter</div>
+              <!-- <span class="icon">Capere-Ai</span> -->
+            </div>
+            <div class="content-wrapper">
+              <div class="content-left reveal-left">
+                <h2 class="h2 black weight-600">Dear Business Owner!</h2>
+                <h2 class="h2 gray">
+                  You didn't build your business to be overlooked.
+                </h2>
+                <div class="funnel-image-wrapper">
+                  <img
+                    src="assets/SEO-GBP-Funnel1.png"
+                    alt="SEO & Google Business Profile Conversion Funnel"
+                  />
+                </div>
+              </div>
+              <div class="content-right reveal-right reveal-delay-1">
+                <p class="open-letter-text">
+                  You've built your business on trust, hard work, and great
+                  service. But in a digital world, doing great work isn't always
+                  enough to win the booking.<br /><br />
+                  If customers can't reach you instantly or quickly see why they
+                  should choose you, they'll choose someone else.<br /><br />
+                  <span class="open-letter-span"
+                    >That's why we built <strong>Capere AI</strong>: the system
+                    your business needs to capture more customers and grow with
+                    confidence.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Convert Opportunities? Section (corresponds to Why Collect Insights?) -->
+      <section class="hear-it-out-section" id="why-convert">
+        <div class="dark-background">
+          <div class="container hear-it-out-container">
+            <div class="content-header reveal-zoom">
+              <div class="content-header-top">
+                <div class="content-sub-title">
+                  Turn More Local Searches into Paying Customers
+                </div>
+                <h2 class="h4 white">
+                  Build a Growth System That Feeds Itself
+                </h2>
+              </div>
+              <!-- <p class="hero-text grey-200">Capere AI connects every step of the customer journey—from discovery to booking to five-star reviews—creating a growth cycle that becomes stronger over time.</p> -->
+            </div>
+            <div class="card-content-wrapper">
+              <div class="card reveal-left">
+                <div class="card-image-wrapper">
+                  <img
+                    src="assets/visiblity.png"
+                    alt="Increase Local Visibility preview"
+                    class="card-preview-image"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Get Found</h3>
+                  <p class="card-text">
+                    Help more local customers discover your business when
+                    they're searching on Google Search and Maps.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mobile-connector">
+                <svg
+                  class="connector-arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </div>
+
+              <div class="card reveal-right reveal-delay-1">
+                <div class="card-image-wrapper">
+                  <img
+                    src="assets/capture.png"
+                    alt="Capture Every Opportunity preview"
+                    class="card-preview-image"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Capture Every Opportunity</h3>
+                  <p class="card-text">
+                    Respond instantly to calls, messages, and website inquiries
+                    before prospects choose a competitor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mobile-connector">
+                <svg
+                  class="connector-arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </div>
+
+              <div class="card reveal-left reveal-delay-2">
+                <div class="card-image-wrapper">
+                  <img
+                    src="assets/Trust.png"
+                    alt="Automate Your Scheduling preview"
+                    class="card-preview-image"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Earn More Reviews</h3>
+                  <p class="card-text">
+                    Automatically request reviews after every completed job,
+                    building trust that attracts even more local customers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mobile-connector">
+                <svg
+                  class="connector-arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </div>
+
+              <div class="card reveal-right reveal-delay-3">
+                <div class="card-image-wrapper">
+                  <img
+                    src="assets/Automate.png"
+                    alt="Build Lasting Trust preview"
+                    class="card-preview-image"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Book More Jobs</h3>
+                  <p class="card-text">
+                    Automate scheduling, reminders, and follow-ups so more
+                    inquiries become confirmed appointments.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Desktop Connectors (Absolute Positioned) -->
+              <div class="desktop-connector connector-1-2">
+                <svg
+                  class="connector-arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </a>
+              </div>
+              <div class="desktop-connector connector-2-4">
+                <svg
+                  class="connector-arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+              <div class="desktop-connector connector-4-3">
+                <svg
+                  class="connector-arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+              <div class="desktop-connector connector-3-1">
+                <svg
+                  class="connector-arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
             </div>
-            
-            <div class="hero-ticker-wrapper reveal-left reveal-delay-4">
-              <div class="hero-ticker-fade left"></div>
-              <div class="hero-ticker-track">
-                <div class="hero-ticker-group">
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                    <span>Local SEO Engine</span>
-                  </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
-                    <span>Google Business Profile</span>
-                  </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                    <span>AI Chat Assistant</span>
-                  </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path><line x1="23" y1="1" x2="17" y2="7"></line><line x1="17" y1="1" x2="23" y2="7"></line></svg>
-                    <span>Missed Call Recovery</span>
-                  </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                    <span>Smart Booking</span>
-                  </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                    <span>Unified CRM</span>
-                  </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                    <span>Review Management</span>
-                  </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                    <span>Workflow Automation</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Live Simulator Section (corresponds to Video demo) -->
+      <section class="why-capere-section" id="simulator-section">
+        <div class="bg-grid-container">
+          <div class="bg-grid-line-v" style="left: 0%"></div>
+          <div class="bg-grid-line-v" style="left: 25%"></div>
+          <div class="bg-grid-line-v" style="left: 50%"></div>
+          <div class="bg-grid-line-v" style="left: 75%"></div>
+          <div class="bg-grid-line-v" style="left: 100%"></div>
+          <div class="bg-grid-line-h" style="top: 30%"></div>
+          <div class="bg-grid-line-h" style="top: 70%"></div>
+          <div class="bg-grid-line-h" style="bottom: 0%"></div>
+          <div class="bg-grid-box" style="left: -120px; top: 20%"></div>
+          <div class="bg-grid-box" style="right: -80px; top: 60%"></div>
+          <!-- Dashed box positioned on the left side, bridging the gap between Lead Recovery and Calculator -->
+          <div
+            class="bg-grid-box"
+            style="left: -100px; bottom: -20px; z-index: 5"
+          ></div>
+        </div>
+        <div class="container grid-2-col">
+          <div class="feature-text-block reveal-left">
+            <span class="cursive-tagline accent-text">Lead Recovery</span>
+            <h2 class="section-title">
+              Turn Missed Leads into Paying Customers.
+            </h2>
+            <p class="section-desc">
+              Every inquiry is a potential customer. Whether someone calls,
+              messages, or reaches out through your website, slow responses
+              often mean lost business. Capere AI responds instantly, captures
+              every opportunity, and helps turn more leads into booked jobs.<br /><br />
+              <strong>See the Lead Recovery System in action:</strong>
+            </p>
+            <ul class="benefit-list">
+              <li>
+                <strong>Instant Lead Recovery:</strong> Automatically starts a
+                conversation the moment a lead reaches out, even when you're
+                busy.
+              </li>
+              <li>
+                <strong>One Unified Inbox:</strong> Manage calls, texts, emails,
+                and web chats from one place.
+              </li>
+              <li>
+                <strong>Smart Booking:</strong> Syncs with your calendar to book
+                appointments automatically and keep your schedule full.
+              </li>
+            </ul>
+          </div>
+
+          <div class="phone-mockup-wrapper reveal-zoom" id="simulator">
+            <div class="phone-frame">
+              <div class="phone-screen">
+                <div class="phone-header">
+                  <span class="phone-time">2:14 PM</span>
+                  <div class="phone-notch"></div>
+                  <div class="phone-icons">📶 🔋</div>
+                </div>
+                <div class="chat-header">
+                  <div class="avatar">⚙️</div>
+                  <div class="chat-info">
+                    <span class="chat-name">Apex Air Solutions</span>
+                    <span class="chat-status">Active</span>
                   </div>
                 </div>
-                <!-- Duplicate group for seamless looping scroll -->
-                <div class="hero-ticker-group" aria-hidden="true">
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                    <span>Local SEO Engine</span>
+                <div class="chat-messages" id="sim-message-box">
+                  <!-- Messages dynamically render via JS -->
+                </div>
+                <div class="chat-input-area">
+                  <div class="fake-input">Type YES to book...</div>
+                  <button class="send-btn">➔</button>
+                </div>
+              </div>
+            </div>
+            <div class="simulator-control">
+              <button
+                class="btn btn-secondary btn-small"
+                id="restart-sim-btn"
+                onclick="restartSimulation()"
+              >
+                Restart Demo
+              </button>
+              <span class="status-indicator"
+                ><span class="pulse-dot"></span> Live Recovery Flow</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Growth Impact Calculator Section -->
+      <section class="calculator-section" id="roi-calculator">
+        <div class="container">
+          <div class="grid-2-col" style="align-items: flex-start">
+            <div class="calculator-column-left reveal-left">
+              <div
+                class="calculator-header-block"
+                style="margin-bottom: var(--space-xl)"
+              >
+                <span
+                  class="cursive-tagline accent-text"
+                  style="
+                    display: block;
+                    margin-bottom: var(--space-xs);
+                    font-size: 32px;
+                  "
+                  >Growth Impact Calculator</span
+                >
+                <h2
+                  class="section-title"
+                  style="
+                    text-align: left;
+                    font-size: 32px;
+                    margin-bottom: var(--space-xs);
+                    letter-spacing: -0.8px;
+                    line-height: 1.25;
+                  "
+                >
+                  How Much Revenue Are You Leaving on the Table?
+                </h2>
+                <p
+                  class="section-desc"
+                  style="
+                    text-align: left;
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    font-size: 15.5px;
+                    line-height: 1.5;
+                  "
+                >
+                  Use the calculator below to estimate how much revenue Capere
+                  AI could help you recover each month
+                </p>
+              </div>
+
+              <div class="calculator-inputs-card">
+                <div class="calc-group">
+                  <div class="slider-label-row">
+                    <span class="slider-title">Average Job Value</span>
+                    <span class="slider-value" id="calc-val-job-text"
+                      >$1,500</span
+                    >
                   </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
-                    <span>Google Business Profile</span>
+                  <input
+                    type="range"
+                    id="calc-job-value"
+                    min="100"
+                    max="10000"
+                    step="100"
+                    value="1500"
+                    class="range-slider"
+                  />
+                  <div class="slider-limits">
+                    <span>$100</span>
+                    <span>$10,000</span>
                   </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                    <span>AI Chat Assistant</span>
+                </div>
+
+                <div class="calc-group">
+                  <div class="slider-label-row">
+                    <span class="slider-title">Lost Leads Per Month</span>
+                    <span class="slider-value" id="calc-val-missed-text"
+                      >25</span
+                    >
                   </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path><line x1="23" y1="1" x2="17" y2="7"></line><line x1="17" y1="1" x2="23" y2="7"></line></svg>
-                    <span>Missed Call Recovery</span>
+                  <input
+                    type="range"
+                    id="calc-missed-calls"
+                    min="1"
+                    max="100"
+                    step="1"
+                    value="25"
+                    class="range-slider"
+                  />
+                  <div class="slider-limits">
+                    <span>1 Lead</span>
+                    <span>100 Leads</span>
                   </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                    <span>Smart Booking</span>
+                </div>
+
+                <div class="calc-group">
+                  <div class="slider-label-row">
+                    <span class="slider-title">Job Close Rate</span>
+                    <span class="slider-value" id="calc-val-rate-text"
+                      >35%</span
+                    >
                   </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                    <span>Unified CRM</span>
+                  <input
+                    type="range"
+                    id="calc-close-rate"
+                    min="5"
+                    max="90"
+                    step="5"
+                    value="35"
+                    class="range-slider"
+                  />
+                  <div class="slider-limits">
+                    <span>5%</span>
+                    <span>90%</span>
                   </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                    <span>Review Management</span>
+                </div>
+
+                <div class="calc-group">
+                  <div class="slider-label-row">
+                    <span class="slider-title"
+                      >Customers Lost to Competitors</span
+                    >
+                    <span class="slider-value" id="calc-val-suburbs-text"
+                      >15</span
+                    >
                   </div>
-                  <div class="ticker-chip">
-                    <svg class="ticker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                    <span>Workflow Automation</span>
+                  <input
+                    type="range"
+                    id="calc-suburbs"
+                    min="1"
+                    max="100"
+                    step="1"
+                    value="15"
+                    class="range-slider"
+                  />
+                  <div class="slider-limits">
+                    <span>1 Customer</span>
+                    <span>100 Customers</span>
                   </div>
                 </div>
               </div>
-              <div class="hero-ticker-fade right"></div>
             </div>
-          </div>
 
-          <!-- Hero Right Column: Slideshow -->
-          <div class="hero-slideshow-right reveal-right reveal-delay-2">
+            <div class="calculator-results-card reveal-right">
+              <div class="calc-results-header">
+                <h4>Revenue Analysis</h4>
+              </div>
 
+              <div class="results-grid">
+                <div class="result-box dark">
+                  <span class="result-label">Revenue Going to Competitors</span>
+                  <span class="result-number text-red" id="res-monthly-loss"
+                    >$35,625</span
+                  >
+                  <span class="result-sub"
+                    >Due to poor visibility & missed leads</span
+                  >
+                </div>
 
-            <div class="slideshow-container">
-              <div class="hero-slide active">
-                <img src="assets/HVAC%20Contractor.jpg" alt="HVAC Contractor Services">
-                <span class="slide-caption">HVAC & Comfort Services</span>
-              </div>
-              <div class="hero-slide">
-                <img src="assets/Cosmetic%20Dentist.jpg" alt="Cosmetic Dentist Services">
-                <span class="slide-caption">Dental & Oral Practice</span>
-              </div>
-              <div class="hero-slide">
-                <img src="assets/personal-injury.jpg" alt="Personal Injury Law Services">
-                <span class="slide-caption">Legal & Counsel Firms</span>
-              </div>
-              <div class="hero-slide">
-                <img src="assets/CPA.jpg" alt="CPA & Accounting Services">
-                <span class="slide-caption">Accounting & Tax Advisory</span>
-              </div>
-              <div class="hero-slide">
-                <img src="assets/Physical%20Therapist.jpg" alt="Physical Therapist Services">
-                <span class="slide-caption">Physical Therapy & Health</span>
-              </div>
-              
-              <!-- Slide dot indicators -->
-              <div class="slideshow-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- Open Letter Section -->
-    <section class="open-letter-section" id="open-letter">
-      <div class="bg-grid-container">
-        <div class="bg-grid-line-v" style="left: 0%;"></div>
-        <div class="bg-grid-line-v" style="left: 25%;"></div>
-        <div class="bg-grid-line-v" style="left: 50%;"></div>
-        <div class="bg-grid-line-v" style="left: 75%;"></div>
-        <div class="bg-grid-line-v" style="left: 100%;"></div>
-        <div class="bg-grid-line-h" style="top: 30%;"></div>
-        <div class="bg-grid-line-h" style="top: 70%;"></div>
-        <div class="bg-grid-box" style="right: -80px; top: 15%;"></div>
-        <div class="bg-grid-box" style="left: -120px; top: 55%;"></div>
-      </div>
-      <div class="container">
-        <div class="open-letter-wrapper">
-          <div class="section-title-wrapper reveal">
-            <div class="cursive-tagline content-sub-title">Open Letter</div>
-            <!-- <span class="icon">Capere-Ai</span> -->
-          </div>
-          <div class="content-wrapper">
-            <div class="content-left reveal-left">
-              <h2 class="h2 black weight-600">Dear Business Owner!</h2>
-              <h2 class="h2 gray">You didn't build your business to be overlooked.</h2>
-              <div class="funnel-image-wrapper">
-                <img src="assets/SEO-GBP-Funnel1.png" alt="SEO & Google Business Profile Conversion Funnel">
-              </div>
-            </div>
-            <div class="content-right reveal-right reveal-delay-1">
-              <p class="open-letter-text">
-                You've built your business on trust, hard work, and great service. But in a digital world, doing great work isn't always enough to win the booking.<br/><br/>
-                If customers can't reach you instantly or quickly see why they should choose you, they'll choose someone else.<br/><br/>
-                <span class="open-letter-span">That's why we built <strong>Capere AI</strong>: the system your business needs to capture more customers and grow with confidence.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Convert Opportunities? Section (corresponds to Why Collect Insights?) -->
-    <section class="hear-it-out-section" id="why-convert">
-      <div class="dark-background">
-        <div class="container hear-it-out-container">
-          <div class="content-header reveal-zoom">
-            <div class="content-header-top">
-              <div class="content-sub-title">Turn More Local Searches into Paying Customers</div>
-              <h2 class="h4 white">Build a Growth System That Feeds Itself</h2>
-            </div>
-            <!-- <p class="hero-text grey-200">Capere AI connects every step of the customer journey—from discovery to booking to five-star reviews—creating a growth cycle that becomes stronger over time.</p> -->
-          </div>
-          <div class="card-content-wrapper">
-            <div class="card reveal-left">
-              <div class="card-image-wrapper">
-                <img src="assets/visiblity.png" alt="Increase Local Visibility preview" class="card-preview-image">
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">Get Found</h3>
-                <p class="card-text">Help more local customers discover your business when they're searching on Google Search and Maps.</p>
-              </div>
-            </div>
-            
-            <div class="mobile-connector">
-              <svg class="connector-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <polyline points="19 12 12 19 5 12"></polyline>
-              </svg>
-            </div>
-            
-            <div class="card reveal-right reveal-delay-1">
-              <div class="card-image-wrapper">
-                <img src="assets/capture.png" alt="Capture Every Opportunity preview" class="card-preview-image">
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">Capture Every Opportunity</h3>
-                <p class="card-text">Respond instantly to calls, messages, and website inquiries before prospects choose a competitor.</p>
-              </div>
-            </div>
-            
-            <div class="mobile-connector">
-              <svg class="connector-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <polyline points="19 12 12 19 5 12"></polyline>
-              </svg>
-            </div>
-            
-            <div class="card reveal-left reveal-delay-2">
-              <div class="card-image-wrapper">
-                <img src="assets/Trust.png" alt="Automate Your Scheduling preview" class="card-preview-image">
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">Earn More Reviews</h3>
-                <p class="card-text">Automatically request reviews after every completed job, building trust that attracts even more local customers.</p>
-              </div>
-            </div>
-            
-            <div class="mobile-connector">
-              <svg class="connector-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <polyline points="19 12 12 19 5 12"></polyline>
-              </svg>
-            </div>
-            
-            <div class="card reveal-right reveal-delay-3">
-              <div class="card-image-wrapper">
-                <img src="assets/Automate.png" alt="Build Lasting Trust preview" class="card-preview-image">
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">Book More Jobs</h3>
-                <p class="card-text">Automate scheduling, reminders, and follow-ups so more inquiries become confirmed appointments.</p>
-              </div>
-            </div>
-            
-            <!-- Desktop Connectors (Absolute Positioned) -->
-            <div class="desktop-connector connector-1-2">
-              <svg class="connector-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </div>
-            <div class="desktop-connector connector-2-4">
-              <svg class="connector-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </div>
-            <div class="desktop-connector connector-4-3">
-              <svg class="connector-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </div>
-            <div class="desktop-connector connector-3-1">
-              <svg class="connector-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Live Simulator Section (corresponds to Video demo) -->
-    <section class="why-capere-section" id="simulator-section">
-      <div class="bg-grid-container">
-        <div class="bg-grid-line-v" style="left: 0%;"></div>
-        <div class="bg-grid-line-v" style="left: 25%;"></div>
-        <div class="bg-grid-line-v" style="left: 50%;"></div>
-        <div class="bg-grid-line-v" style="left: 75%;"></div>
-        <div class="bg-grid-line-v" style="left: 100%;"></div>
-        <div class="bg-grid-line-h" style="top: 30%;"></div>
-        <div class="bg-grid-line-h" style="top: 70%;"></div>
-        <div class="bg-grid-line-h" style="bottom: 0%;"></div>
-        <div class="bg-grid-box" style="left: -120px; top: 20%;"></div>
-        <div class="bg-grid-box" style="right: -80px; top: 60%;"></div>
-        <!-- Dashed box positioned on the left side, bridging the gap between Lead Recovery and Calculator -->
-        <div class="bg-grid-box" style="left: -100px; bottom: -20px; z-index: 5;"></div>
-      </div>
-      <div class="container grid-2-col">
-        <div class="feature-text-block reveal-left">
-          <span class="cursive-tagline accent-text">Lead Recovery</span>
-          <h2 class="section-title">Turn Missed Leads into Paying Customers.</h2>
-          <p class="section-desc">
-            Every inquiry is a potential customer. Whether someone calls, messages, or reaches out through your website, slow responses often mean lost business. Capere AI responds instantly, captures every opportunity, and helps turn more leads into booked jobs.<br/><br/>
-            <strong>See the Lead Recovery System in action:</strong>
-          </p>
-          <ul class="benefit-list">
-            <li><strong>Instant Lead Recovery:</strong> Automatically starts a conversation the moment a lead reaches out, even when you're busy.</li>
-            <li><strong>One Unified Inbox:</strong> Manage calls, texts, emails, and web chats from one place.</li>
-            <li><strong>Smart Booking:</strong> Syncs with your calendar to book appointments automatically and keep your schedule full.</li>
-          </ul>
-        </div>
-        
-        <div class="phone-mockup-wrapper reveal-zoom" id="simulator">
-          <div class="phone-frame">
-            <div class="phone-screen">
-              <div class="phone-header">
-                <span class="phone-time">2:14 PM</span>
-                <div class="phone-notch"></div>
-                <div class="phone-icons">📶 🔋</div>
-              </div>
-              <div class="chat-header">
-                <div class="avatar">⚙️</div>
-                <div class="chat-info">
-                  <span class="chat-name">Apex Air Solutions</span>
-                  <span class="chat-status">Active</span>
+                <div class="result-box green">
+                  <span class="result-label">Revenue You Could Win Back</span>
+                  <span
+                    class="result-number text-green"
+                    id="res-monthly-recovered"
+                    >$13,688</span
+                  >
+                  <span class="result-sub"
+                    >With better visibility & lead recovery</span
+                  >
                 </div>
               </div>
-              <div class="chat-messages" id="sim-message-box">
-                <!-- Messages dynamically render via JS -->
-              </div>
-              <div class="chat-input-area">
-                <div class="fake-input">Type YES to book...</div>
-                <button class="send-btn">➔</button>
-              </div>
-            </div>
-          </div>
-          <div class="simulator-control">
-            <button class="btn btn-secondary btn-small" id="restart-sim-btn" onclick="restartSimulation()">Restart Demo</button>
-            <span class="status-indicator"><span class="pulse-dot"></span> Live Recovery Flow</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Growth Impact Calculator Section -->
-    <section class="calculator-section" id="roi-calculator">
 
-      <div class="container">
-        
-        <div class="grid-2-col" style="align-items: flex-start;">
-          <div class="calculator-column-left reveal-left">
-            <div class="calculator-header-block" style="margin-bottom: var(--space-xl);">
-              <span class="cursive-tagline accent-text" style="display: block; margin-bottom: var(--space-xs); font-size: 32px;">Growth Impact Calculator</span>
-              <h2 class="section-title" style="text-align: left; font-size: 32px; margin-bottom: var(--space-xs); letter-spacing: -0.8px; line-height: 1.25;">How Much Revenue Are You Leaving on the Table?</h2>
-              <p class="section-desc" style="text-align: left; max-width: 100%; margin-bottom: 0; font-size: 15.5px; line-height: 1.5;">Use the calculator below to estimate how much revenue Capere AI could help you recover each month</p>
-            </div>
-            
-            <div class="calculator-inputs-card">
-            
-            <div class="calc-group">
-            <div class="slider-label-row">
-              <span class="slider-title">Average Job Value</span>
-              <span class="slider-value" id="calc-val-job-text">$1,500</span>
-            </div>
-            <input type="range" id="calc-job-value" min="100" max="10000" step="100" value="1500" class="range-slider">
-            <div class="slider-limits">
-              <span>$100</span>
-              <span>$10,000</span>
-            </div>
-          </div>
-          
-          <div class="calc-group">
-            <div class="slider-label-row">
-              <span class="slider-title">Lost Leads Per Month</span>
-              <span class="slider-value" id="calc-val-missed-text">25</span>
-            </div>
-            <input type="range" id="calc-missed-calls" min="1" max="100" step="1" value="25" class="range-slider">
-            <div class="slider-limits">
-              <span>1 Lead</span>
-              <span>100 Leads</span>
-            </div>
-          </div>
-          
-          <div class="calc-group">
-            <div class="slider-label-row">
-              <span class="slider-title">Job Close Rate</span>
-              <span class="slider-value" id="calc-val-rate-text">35%</span>
-            </div>
-            <input type="range" id="calc-close-rate" min="5" max="90" step="5" value="35" class="range-slider">
-            <div class="slider-limits">
-              <span>5%</span>
-              <span>90%</span>
-            </div>
-          </div>
-          
-          <div class="calc-group">
-            <div class="slider-label-row">
-              <span class="slider-title">Customers Lost to Competitors</span>
-              <span class="slider-value" id="calc-val-suburbs-text">15</span>
-            </div>
-            <input type="range" id="calc-suburbs" min="1" max="100" step="1" value="15" class="range-slider">
-            <div class="slider-limits">
-              <span>1 Customer</span>
-              <span>100 Customers</span>
+              <div class="profit-summary-card">
+                <div class="summary-row">
+                  <span>Your Investment:</span>
+                  <span class="investment-text" id="res-investment-cost"
+                    >$497/mo</span
+                  >
+                </div>
+                <div class="summary-row highlight">
+                  <span>Estimated Monthly Profit:</span>
+                  <span class="net-profit-text" id="res-net-profit"
+                    >$13,191/mo</span
+                  >
+                </div>
+              </div>
+
+              <div class="break-even-message">
+                <div class="icon">📈</div>
+                <div class="text">
+                  Based on your estimates, approximately
+                  <strong id="res-dyn-loss-val">$35,625</strong> in revenue is
+                  going to competitors every month. Recovering even
+                  <strong class="text-accent">40%</strong> of those
+                  opportunities could generate an additional
+                  <strong id="res-dyn-win-val" class="highlight-text"
+                    >$14,250</strong
+                  >
+                  in monthly revenue.<br />
+                  <span
+                    style="
+                      font-size: 12px;
+                      opacity: 0.8;
+                      display: block;
+                      margin-top: 6px;
+                    "
+                    >Close just
+                    <span id="res-break-even-jobs" class="highlight-text"
+                      >0.3</span
+                    >
+                    extra jobs per month to cover your investment.</span
+                  >
+                </div>
+              </div>
+
+              <button
+                class="btn btn-primary btn-block"
+                onclick="openDemoModal()"
+              >
+                See My Growth Potential
+              </button>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="calculator-results-card reveal-right">
-          <div class="calc-results-header">
-            <h4>Revenue Analysis</h4>
-          </div>
-          
-          <div class="results-grid">
-            <div class="result-box dark">
-              <span class="result-label">Revenue Going to Competitors</span>
-              <span class="result-number text-red" id="res-monthly-loss">$35,625</span>
-              <span class="result-sub">Due to poor visibility & missed leads</span>
-            </div>
-            
-            <div class="result-box green">
-              <span class="result-label">Revenue You Could Win Back</span>
-              <span class="result-number text-green" id="res-monthly-recovered">$13,688</span>
-              <span class="result-sub">With better visibility & lead recovery</span>
-            </div>
-          </div>
+      </section>
 
-          <div class="profit-summary-card">
-            <div class="summary-row">
-              <span>Your Investment:</span>
-              <span class="investment-text" id="res-investment-cost">$497/mo</span>
-            </div>
-            <div class="summary-row highlight">
-              <span>Estimated Monthly Profit:</span>
-              <span class="net-profit-text" id="res-net-profit">$13,191/mo</span>
-            </div>
-          </div>
-          
-          <div class="break-even-message">
-            <div class="icon">📈</div>
-            <div class="text">
-              Based on your estimates, approximately <strong id="res-dyn-loss-val">$35,625</strong> in revenue is going to competitors every month. Recovering even <strong class="text-accent">40%</strong> of those opportunities could generate an additional <strong id="res-dyn-win-val" class="highlight-text">$14,250</strong> in monthly revenue.<br/>
-              <span style="font-size: 12px; opacity: 0.8; display: block; margin-top: 6px;">Close just <span id="res-break-even-jobs" class="highlight-text">0.3</span> extra jobs per month to cover your investment.</span>
-            </div>
-          </div>
-          
-          <button class="btn btn-primary btn-block" onclick="openDemoModal()">See My Growth Potential</button>
+      <section class="future-proof-section" id="future-proof">
+        <div class="bg-grid-container">
+          <div class="bg-grid-line-v" style="left: 0%"></div>
+          <div class="bg-grid-line-v" style="left: 25%"></div>
+          <div class="bg-grid-line-v" style="left: 50%"></div>
+          <div class="bg-grid-line-v" style="left: 75%"></div>
+          <div class="bg-grid-line-v" style="left: 100%"></div>
+          <div class="bg-grid-line-h" style="top: 30%"></div>
+          <div class="bg-grid-line-h" style="top: 70%"></div>
+          <div class="bg-grid-box" style="left: -120px; top: 15%"></div>
+          <div class="bg-grid-box" style="right: -100px; top: 60%"></div>
         </div>
-      </div>
-    </div>
-  </section>
 
-    <!-- Future-Proof Section -->
-    <section class="future-proof-section" id="future-proof">
-      <div class="bg-grid-container">
-        <div class="bg-grid-line-v" style="left: 0%;"></div>
-        <div class="bg-grid-line-v" style="left: 25%;"></div>
-        <div class="bg-grid-line-v" style="left: 50%;"></div>
-        <div class="bg-grid-line-v" style="left: 75%;"></div>
-        <div class="bg-grid-line-v" style="left: 100%;"></div>
-        <div class="bg-grid-line-h" style="top: 30%;"></div>
-        <div class="bg-grid-line-h" style="top: 70%;"></div>
-        <div class="bg-grid-box" style="left: -120px; top: 15%;"></div>
-        <div class="bg-grid-box" style="right: -100px; top: 60%;"></div>
-      </div>
-      
-      <!-- Top Strip: moves left -->
-      
+        <!-- Top Strip: moves left -->
 
-      <div class="container">
-        <div class="future-proof-container">
-          <div class="future-proof-grid">
-            <div class="future-proof-left reveal-left">
-              <span class="cursive-tagline accent-text">Growth Infrastructure</span>
-              <h2 class="section-title">Your Marketing Will Change.<br/><span class="text-accent">Your Growth System Shouldn't.</span></h2>
-              
-              <div class="future-callout-block">
-                <p class="future-lead">Build the Engine Before You Buy More Fuel.</p>
-                <p class="future-text">Before you invest in SEO, Google Ads, social media, or any other marketing, build the system that captures and converts every opportunity. Once Capere AI is in place, every future marketing dollar works harder.</p>
-              </div>
+        <div class="container">
+          <div class="future-proof-container">
+            <div class="future-proof-grid">
+              <div class="future-proof-left reveal-left">
+                <span class="cursive-tagline accent-text"
+                  >Growth Infrastructure</span
+                >
+                <h2 class="section-title">
+                  Your Marketing Will Change.<br /><span class="text-accent"
+                    >Your Growth System Shouldn't.</span
+                  >
+                </h2>
 
-              <!-- <div class="future-benefits-group">
+                <div class="future-callout-block">
+                  <p class="future-lead">
+                    Build the Engine Before You Buy More Fuel.
+                  </p>
+                  <p class="future-text">
+                    Before you invest in SEO, Google Ads, social media, or any
+                    other marketing, build the system that captures and converts
+                    every opportunity. Once Capere AI is in place, every future
+                    marketing dollar works harder.
+                  </p>
+                </div>
+
+                <!-- <div class="future-benefits-group">
                 <div class="future-benefit-item">
                   <div class="benefit-bullet-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
@@ -587,584 +1146,1057 @@
                   </div>
                 </div>
               </div> -->
-            </div>
-            
-            <div class="future-proof-right reveal-right">
-              <div class="future-image-wrapper">
-                <img src="assets/future-growth1.png" alt="Capere AI Future Growth Infrastructure diagram" class="future-growth-image">
+              </div>
+
+              <div class="future-proof-right reveal-right">
+                <div class="future-image-wrapper">
+                  <img
+                    src="assets/future-growth1.png"
+                    alt="Capere AI Future Growth Infrastructure diagram"
+                    class="future-growth-image"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <br><br>
-      <!-- Bottom Strip: moves right -->
-      <div class="section-ticker-wrapper top-strip reveal-zoom">
-        <div class="section-ticker-fade left"></div>
-        <div class="section-ticker-track">
-          <div class="section-ticker-group">
-            <span>AI Automation</span><span class="ticker-dot">•</span>
-            <span>Local SEO</span><span class="ticker-dot">•</span>
-            <span>CRM</span><span class="ticker-dot">•</span>
-            <span>Smart Booking</span><span class="ticker-dot">•</span>
-            <span>Google Business Profile</span><span class="ticker-dot">•</span>
-            <span>Analytics</span><span class="ticker-dot">•</span>
-            <span>Unified Inbox</span><span class="ticker-dot">•</span>
-            <span>Review Management</span><span class="ticker-dot">•</span>
-            <span>Business Phone</span><span class="ticker-dot">•</span>
-            <span>AI Chat</span>
+        <br /><br />
+        <!-- Bottom Strip: moves right -->
+        <div class="section-ticker-wrapper top-strip reveal-zoom">
+          <div class="section-ticker-fade left"></div>
+          <div class="section-ticker-track">
+            <div class="section-ticker-group">
+              <span>AI Automation</span><span class="ticker-dot">•</span>
+              <span>Local SEO</span><span class="ticker-dot">•</span>
+              <span>CRM</span><span class="ticker-dot">•</span>
+              <span>Smart Booking</span><span class="ticker-dot">•</span>
+              <span>Google Business Profile</span
+              ><span class="ticker-dot">•</span> <span>Analytics</span
+              ><span class="ticker-dot">•</span> <span>Unified Inbox</span
+              ><span class="ticker-dot">•</span> <span>Review Management</span
+              ><span class="ticker-dot">•</span> <span>Business Phone</span
+              ><span class="ticker-dot">•</span>
+              <span>AI Chat</span>
+            </div>
+            <div class="section-ticker-group" aria-hidden="true">
+              <span class="ticker-dot">•</span>
+              <span>AI Automation</span><span class="ticker-dot">•</span>
+              <span>Local SEO</span><span class="ticker-dot">•</span>
+              <span>CRM</span><span class="ticker-dot">•</span>
+              <span>Smart Booking</span><span class="ticker-dot">•</span>
+              <span>Google Business Profile</span
+              ><span class="ticker-dot">•</span> <span>Analytics</span
+              ><span class="ticker-dot">•</span> <span>Unified Inbox</span
+              ><span class="ticker-dot">•</span> <span>Review Management</span
+              ><span class="ticker-dot">•</span> <span>Business Phone</span
+              ><span class="ticker-dot">•</span>
+              <span>AI Chat</span>
+            </div>
           </div>
-          <div class="section-ticker-group" aria-hidden="true">
-            <span class="ticker-dot">•</span>
-            <span>AI Automation</span><span class="ticker-dot">•</span>
-            <span>Local SEO</span><span class="ticker-dot">•</span>
-            <span>CRM</span><span class="ticker-dot">•</span>
-            <span>Smart Booking</span><span class="ticker-dot">•</span>
-            <span>Google Business Profile</span><span class="ticker-dot">•</span>
-            <span>Analytics</span><span class="ticker-dot">•</span>
-            <span>Unified Inbox</span><span class="ticker-dot">•</span>
-            <span>Review Management</span><span class="ticker-dot">•</span>
-            <span>Business Phone</span><span class="ticker-dot">•</span>
-            <span>AI Chat</span>
-          </div>
+          <div class="section-ticker-fade right"></div>
         </div>
-        <div class="section-ticker-fade right"></div>
-      </div>
-      <div class="section-ticker-wrapper bottom-strip reveal-zoom">
-        <div class="section-ticker-fade left"></div>
-        <div class="section-ticker-track reverse">
-          <div class="section-ticker-group reverse-anim">
-            <span>Missed Call Recovery</span><span class="ticker-dot">•</span>
-            <span>Lead Capture</span><span class="ticker-dot">•</span>
-            <span>Workflow Automation</span><span class="ticker-dot">•</span>
-            <span>Calendar Sync</span><span class="ticker-dot">•</span>
-            <span>Service Area Pages</span><span class="ticker-dot">•</span>
-            <span>Customer Pipeline</span><span class="ticker-dot">•</span>
-            <span>Follow-Ups</span><span class="ticker-dot">•</span>
-            <span>Reputation Monitoring</span><span class="ticker-dot">•</span>
-            <span>Local Landing Pages</span><span class="ticker-dot">•</span>
-            <span>Growth Dashboard</span>
+        <div class="section-ticker-wrapper bottom-strip reveal-zoom">
+          <div class="section-ticker-fade left"></div>
+          <div class="section-ticker-track reverse">
+            <div class="section-ticker-group reverse-anim">
+              <span>Missed Call Recovery</span><span class="ticker-dot">•</span>
+              <span>Lead Capture</span><span class="ticker-dot">•</span>
+              <span>Workflow Automation</span><span class="ticker-dot">•</span>
+              <span>Calendar Sync</span><span class="ticker-dot">•</span>
+              <span>Service Area Pages</span><span class="ticker-dot">•</span>
+              <span>Customer Pipeline</span><span class="ticker-dot">•</span>
+              <span>Follow-Ups</span><span class="ticker-dot">•</span>
+              <span>Reputation Monitoring</span
+              ><span class="ticker-dot">•</span> <span>Local Landing Pages</span
+              ><span class="ticker-dot">•</span>
+              <span>Growth Dashboard</span>
+            </div>
+            <div class="section-ticker-group reverse-anim" aria-hidden="true">
+              <span class="ticker-dot">•</span>
+              <span>Missed Call Recovery</span><span class="ticker-dot">•</span>
+              <span>Lead Capture</span><span class="ticker-dot">•</span>
+              <span>Workflow Automation</span><span class="ticker-dot">•</span>
+              <span>Calendar Sync</span><span class="ticker-dot">•</span>
+              <span>Service Area Pages</span><span class="ticker-dot">•</span>
+              <span>Customer Pipeline</span><span class="ticker-dot">•</span>
+              <span>Follow-Ups</span><span class="ticker-dot">•</span>
+              <span>Reputation Monitoring</span
+              ><span class="ticker-dot">•</span> <span>Local Landing Pages</span
+              ><span class="ticker-dot">•</span>
+              <span>Growth Dashboard</span>
+            </div>
           </div>
-          <div class="section-ticker-group reverse-anim" aria-hidden="true">
-            <span class="ticker-dot">•</span>
-            <span>Missed Call Recovery</span><span class="ticker-dot">•</span>
-            <span>Lead Capture</span><span class="ticker-dot">•</span>
-            <span>Workflow Automation</span><span class="ticker-dot">•</span>
-            <span>Calendar Sync</span><span class="ticker-dot">•</span>
-            <span>Service Area Pages</span><span class="ticker-dot">•</span>
-            <span>Customer Pipeline</span><span class="ticker-dot">•</span>
-            <span>Follow-Ups</span><span class="ticker-dot">•</span>
-            <span>Reputation Monitoring</span><span class="ticker-dot">•</span>
-            <span>Local Landing Pages</span><span class="ticker-dot">•</span>
-            <span>Growth Dashboard</span>
-          </div>
+          <div class="section-ticker-fade right"></div>
         </div>
-        <div class="section-ticker-fade right"></div>
-      </div>
+      </section>
 
-    </section>
+      <!-- Onboarding Section (What Happens After You Sign Up) -->
+      <section class="onboarding-section" id="onboarding">
+        <div class="dark-background">
+          <div class="dark-grid-overlay"></div>
+          <div class="container">
+            <div class="onboarding-grid">
+              <!-- Left Side: Sticky Title -->
+              <div class="onboarding-left">
+                <span class="cursive-tagline text-accent">The 7-Day Implementation Framework</span>
+                <h2 class="section-title text-white">How We Get You Live in 7 Days</h2>
+                <p class="section-desc text-light">
+                  From audit to automation, we install the infrastructure your business needs to capture, follow up with, and convert more customers.
+                
+                  No templates. Every system is configured specifically for your business.
+                </p>
+              </div>
 
-    <!-- Pricing Packages Section -->
-    <section class="pricing-section" id="pricing">
-      <div class="bg-grid-container">
-        <div class="bg-grid-line-v" style="left: 0%;"></div>
-        <div class="bg-grid-line-v" style="left: 25%;"></div>
-        <div class="bg-grid-line-v" style="left: 50%;"></div>
-        <div class="bg-grid-line-v" style="left: 75%;"></div>
-        <div class="bg-grid-line-v" style="left: 100%;"></div>
-        <div class="bg-grid-line-h" style="top: 25%;"></div>
-        <div class="bg-grid-line-h" style="top: 75%;"></div>
-        <div class="bg-grid-box" style="left: -120px; top: 10%;"></div>
-        <div class="bg-grid-box" style="right: -80px; top: 60%;"></div>
-      </div>
-      <div class="container">
-        <div class="text-align-center reveal-zoom">
-          <span class="cursive-tagline accent-text">Everything You Need to Grow</span>
-          <h2 class="section-title">Simple, Transparent Pricing</h2>
-          <!-- <p class="section-desc max-width-600">
-            Build your conversion foundation today. Secure your operational infrastructure with one simple plan.
-          </p> -->
-        </div>
-        
-        <div class="single-pricing-card reveal-zoom">
-          <div class="pricing-card-left">
-            <!-- <div class="pricing-badge">FOUNDING PARTNER PACKAGE</div> -->
-            <h3 class="plan-title">The Growth Infrastructure Plan</h3>
-            <p class="plan-subtitle">Everything you need to attract, capture, and convert more local customers—without juggling multiple tools or retainers.</p>
-            
-            <div class="pricing-rates-wrapper">
-              <div class="rate-main-focus">
-                <div class="rate-price">$997<span class="rate-period-slash"> first month</span></div>
-                <div class="rate-setup-caption">Includes complete onboarding & setup • Then $497/mo thereafter</div>
+              <!-- Right Side: Minimalist Vertical Roadmap List -->
+              <div class="onboarding-right">
+                <div class="minimal-timeline-wrapper">
+                  <!-- Moving Indicator Dot -->
+                  <div class="timeline-indicator-dot"></div>
+
+                  <!-- Day 1 -->
+                  <div class="timeline-row">
+                    <div class="timeline-meta">
+                      <span class="timeline-day">Day 1</span>
+                    </div>
+                    <div class="timeline-marker">
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="timeline-header">
+                        <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                          <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>
+                        <h3 class="timeline-headline text-white">Discovery & Growth Blueprint</h3>
+                      </div>
+                      <p class="timeline-text text-light">We analyze your competitors, local search presence, and customer journey to build your acquisition strategy.</p>
+                    </div>
+                  </div>
+
+                  <!-- Day 2 -->
+                  <div class="timeline-row">
+                    <div class="timeline-meta">
+                      <span class="timeline-day">Day 2</span>
+                    </div>
+                    <div class="timeline-marker">
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="timeline-header">
+                        <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                          <rect x="9" y="9" width="6" height="6"></rect>
+                          <line x1="9" y1="1" x2="9" y2="4"></line>
+                          <line x1="15" y1="1" x2="15" y2="4"></line>
+                          <line x1="9" y1="20" x2="9" y2="23"></line>
+                          <line x1="15" y1="20" x2="15" y2="23"></line>
+                          <line x1="20" y1="9" x2="23" y2="9"></line>
+                          <line x1="20" y1="15" x2="23" y2="15"></line>
+                          <line x1="1" y1="9" x2="4" y2="9"></line>
+                          <line x1="1" y1="15" x2="4" y2="15"></line>
+                        </svg>
+                        <h3 class="timeline-headline text-white">AI & CRM Foundation</h3>
+                      </div>
+                      <p class="timeline-text text-light">Your AI assistant, CRM, call tracking, and lead pipeline are configured for your business.</p>
+                    </div>
+                  </div>
+
+                  <!-- Day 3 -->
+                  <div class="timeline-row">
+                    <div class="timeline-meta">
+                      <span class="timeline-day">Day 3</span>
+                    </div>
+                    <div class="timeline-marker">
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="timeline-header">
+                        <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                          <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <h3 class="timeline-headline text-white">Local Search Optimization</h3>
+                      </div>
+                      <p class="timeline-text text-light">We optimize your Google Business Profile, local SEO, and online visibility to attract more customers.</p>
+                    </div>
+                  </div>
+
+                  <!-- Days 4-5 -->
+                  <div class="timeline-row">
+                    <div class="timeline-meta">
+                      <span class="timeline-day">Days 4–5</span>
+                    </div>
+                    <div class="timeline-marker">
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="timeline-header">
+                        <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                        <h3 class="timeline-headline text-white">Automation Engine</h3>
+                      </div>
+                      <p class="timeline-text text-light">Missed-call recovery, instant follow-ups, website chat, review requests, and appointment booking go live.</p>
+                    </div>
+                  </div>
+
+                  <!-- Day 6 -->
+                  <div class="timeline-row">
+                    <div class="timeline-meta">
+                      <span class="timeline-day">Day 6</span>
+                    </div>
+                    <div class="timeline-marker">
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="timeline-header">
+                        <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                          <polyline points="9 11 11 13 15 9"></polyline>
+                        </svg>
+                        <h3 class="timeline-headline text-white">Testing & Launch Readiness</h3>
+                      </div>
+                      <p class="timeline-text text-light">Every workflow is tested to ensure calls, messages, bookings, and automations work seamlessly.</p>
+                    </div>
+                  </div>
+
+                  <!-- Day 7 -->
+                  <div class="timeline-row live-row">
+                    <div class="timeline-meta">
+                      <span class="timeline-day text-green">Day 7</span>
+                    </div>
+                    <div class="timeline-marker">
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="timeline-header">
+                        <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M4.5 16.5c-1.5 1.25-2.5 3.5-2.5 3.5s2.25-1 3.5-2.5M14 9l-9 9M9 14l9-9M12 12l9-9-3 12-6 3-3-6z"></path>
+                        </svg>
+                        <h3 class="timeline-headline text-white">Go Live</h3>
+                      </div>
+                      <p class="timeline-text text-light">Your Customer Acquisition System is fully operational and ready to capture more customers.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            
-            <button class="btn btn-primary full" onclick="openDemoModal('Founding Partner Package')">Get Started Today</button>
-            
-            <p class="pricing-usage-note-inside">
-              Built for real local service businesses. Standard communication usage is included, with additional charges only for exceptionally high-volume accounts.
+          </div>
+        </div>
+      </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Future-Proof Section -->
+
+      <!-- Pricing Packages Section -->
+      <section class="pricing-section" id="pricing">
+        <div class="bg-grid-container">
+          <div class="bg-grid-line-v" style="left: 0%"></div>
+          <div class="bg-grid-line-v" style="left: 25%"></div>
+          <div class="bg-grid-line-v" style="left: 50%"></div>
+          <div class="bg-grid-line-v" style="left: 75%"></div>
+          <div class="bg-grid-line-v" style="left: 100%"></div>
+          <div class="bg-grid-line-h" style="top: 25%"></div>
+          <div class="bg-grid-line-h" style="top: 75%"></div>
+          <div class="bg-grid-box" style="left: -120px; top: 10%"></div>
+          <div class="bg-grid-box" style="right: -80px; top: 60%"></div>
+        </div>
+        <div class="container">
+          <!-- Section Header -->
+          <div class="text-align-center reveal-zoom">
+            <span class="cursive-tagline accent-text">Choose Your Growth System</span>
+            <h2 class="section-title">Growth System Infrastructure</h2>
+            <p class="section-desc max-width-600">
+              Everything you need to attract, capture, convert, and retain more
+              local customers—without juggling multiple tools, agencies, or
+              subscriptions.
             </p>
           </div>
-          
-          <div class="pricing-card-right">
-            <div class="features-group">
-              <h5 class="group-title">Phase 1: Build Your Growth Foundation <span class="group-subtitle-tag">(One-Time Setup)</span></h5>
-              <ul class="pricing-list">
-                <li class="pricing-list-item">
-                  <svg class="check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Bring every customer conversation into one place.</span>
-                </li>
-                <li class="pricing-list-item">
-                  <svg class="check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Capture every opportunity with a dedicated business phone system.</span>
-                </li>
-                <li class="pricing-list-item">
-                  <svg class="check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Respond instantly with an AI-powered website assistant.</span>
-                </li>
-                <li class="pricing-list-item">
-                  <svg class="check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Increase your visibility across local Google searches.</span>
-                </li>
-                <li class="pricing-list-item">
-                  <svg class="check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Launch your complete growth infrastructure.</span>
-                </li>
-              </ul>
+
+          <div class="single-pricing-card reveal-zoom">
+            <!-- Left Side: Commercials & Pricing Structure -->
+            <div class="pricing-card-left">
+              <div class="pricing-badge-enterprise">
+                Platform Infrastructure
+              </div>
+
+              <div class="pricing-block">
+                <span class="price-title">Growth System Installation</span>
+                <div class="price-row">
+                  <span class="price-number">$997</span>
+                  <span class="price-period">One-Time Implementation</span>
+                </div>
+                <p class="price-subtext">
+                  Everything configured, optimized and launched within 7
+                  business days.
+                </p>
+              </div>
+
+              <div class="price-divider"></div>
+
+              <div class="pricing-block">
+                <span class="price-title">Ongoing Growth Optimization</span>
+                <div class="price-row">
+                  <span class="price-number">$497</span>
+                  <span class="price-period">/month</span>
+                </div>
+                <p
+                  class="price-subtext"
+                  style="margin-bottom: var(--space-base)"
+                >
+                  Includes:
+                </p>
+                <ul class="monthly-includes-list">
+                  <li>
+                    <span class="bullet-dot-green">•</span> Platform Access
+                  </li>
+                  <li>
+                    <span class="bullet-dot-green">•</span> Continuous
+                    Optimization
+                  </li>
+                  <li>
+                    <span class="bullet-dot-green">•</span> Local SEO
+                    Maintenance
+                  </li>
+                  <li>
+                    <span class="bullet-dot-green">•</span> Review Management
+                  </li>
+                  <li>
+                    <span class="bullet-dot-green">•</span> Priority Support
+                  </li>
+                  <li>
+                    <span class="bullet-dot-green">•</span> Monthly Improvements
+                  </li>
+                </ul>
+              </div>
+
+              <div class="pricing-cta-block">
+                <button
+                  class="btn btn-primary full"
+                  onclick="openDemoModal('Growth System Installation')"
+                >
+                  Install My Growth System
+                </button>
+                <span class="cta-subtext"
+                  >Launches in as little as 7 business days.</span
+                >
+              </div>
             </div>
-            
-            <div class="features-group">
-              <h5 class="group-title">Phase 2: Maintain & Scale <span class="group-subtitle-tag">(Monthly)</span></h5>
-              <ul class="pricing-list">
-                <li class="pricing-list-item">
-                  <svg class="check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Continuous optimization of your growth system.</span>
-                </li>
-                <li class="pricing-list-item">
-                  <svg class="check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Expand into more service areas with ease.</span>
-                </li>
-                <li class="pricing-list-item">
-                  <svg class="check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Automatically manage and respond to customer reviews.</span>
-                </li>
-                <li class="pricing-list-item">
-                  <svg class="check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Ongoing local visibility monitoring and diagnostics.</span>
-                </li>
-                <li class="pricing-list-item">
-                  <svg class="check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Unlimited local landing pages with managed hosting.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Comparison Matrix Section -->
-    <section class="comparison-section">
-      <div class="container">
-        <div class="text-align-center reveal-zoom">
-          <span class="cursive-tagline">Why Capere AI Is Different</span>
-          <h2 class="section-title">Why Businesses Choose Capere AI</h2>
-          <p class="section-desc max-width-600">A complete operating foundation replaces multiple single-purpose subscriptions and expensive retainers.</p>
-        </div>
-        
-        <div class="comparison-table-wrapper reveal-zoom">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>Outcome</th>
-                <th class="table-highlight">Capere AI</th>
-                <th>Traditional Approach</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Lead Response Time</strong></td>
-                <td class="table-highlight text-green">
-                  <div class="table-cell-content">
-                    <span class="table-icon-check">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <!-- Right Side: Implementation Checklist & Value Callout -->
+            <div class="pricing-card-right">
+              <!-- Checklist -->
+              <div class="checklist-wrapper">
+                <h5 class="checklist-title">Implementation Checklist</h5>
+                <ul class="checklist-list">
+                  <li>
+                    <span class="check-icon-green">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width: 13px; height: 13px;">
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
                     </span>
-                    <span>Instant replies in under 15 seconds</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="table-cell-content">
-                    <span class="table-icon-cross">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                      </svg>
-                    </span>
-                    <span>Hours or days later</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Lead Capture</strong></td>
-                <td class="table-highlight text-green">
-                  <div class="table-cell-content">
-                    <span class="table-icon-check">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <span>AI Chat Assistant Installed</span>
+                  </li>
+                  <li>
+                    <span class="check-icon-green">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width: 13px; height: 13px;">
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
                     </span>
-                    <span>24/7 automated lead recovery</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="table-cell-content">
-                    <span class="table-icon-cross">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                      </svg>
-                    </span>
-                    <span>Missed calls and lost opportunities</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Scheduling</strong></td>
-                <td class="table-highlight text-green">
-                  <div class="table-cell-content">
-                    <span class="table-icon-check">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <span>CRM & Sales Pipeline Configured</span>
+                  </li>
+                  <li>
+                    <span class="check-icon-green">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width: 13px; height: 13px;">
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
                     </span>
-                    <span>Automated booking & follow-ups</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="table-cell-content">
-                    <span class="table-icon-cross">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                      </svg>
-                    </span>
-                    <span>Manual scheduling and reminders</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Service Area Growth</strong></td>
-                <td class="table-highlight text-green">
-                  <div class="table-cell-content">
-                    <span class="table-icon-check">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <span>Business Phone Activated</span>
+                  </li>
+                  <li>
+                    <span class="check-icon-green">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width: 13px; height: 13px;">
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
                     </span>
-                    <span>Expand into new areas without rebuilding pages</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="table-cell-content">
-                    <span class="table-icon-cross">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                      </svg>
-                    </span>
-                    <span>Additional pages and ongoing agency work</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Customer Communication</strong></td>
-                <td class="table-highlight text-green">
-                  <div class="table-cell-content">
-                    <span class="table-icon-check">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <span>Google Business Profile Optimized</span>
+                  </li>
+                  <li>
+                    <span class="check-icon-green">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width: 13px; height: 13px;">
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
                     </span>
-                    <span>Every conversation in one inbox</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="table-cell-content">
-                    <span class="table-icon-cross">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                      </svg>
-                    </span>
-                    <span>Messages scattered across multiple channels</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Marketing ROI</strong></td>
-                <td class="table-highlight text-green">
-                  <div class="table-cell-content">
-                    <span class="table-icon-check">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <span>Local SEO Foundation Built</span>
+                  </li>
+                  <li>
+                    <span class="check-icon-green">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width: 13px; height: 13px;">
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
                     </span>
-                    <span>Every marketing dollar works harder</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="table-cell-content">
-                    <span class="table-icon-cross">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    <span>Growth Dashboard Activated</span>
+                  </li>
+                  <li>
+                    <span class="check-icon-green">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width: 13px; height: 13px;">
+                        <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
                     </span>
-                    <span>More spending to get the same results</span>
-                  </div>
-                </td>
-              </tr>
-              <tr class="highlight-total-row">
-                <td><strong>Investment</strong></td>
-                <td class="table-highlight text-accent"><strong>$997 first month • $497/mo thereafter</strong></td>
-                <td><strong>Typically $1,500–$3,000+/month across multiple vendors</strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
+                    <span>Review Management Enabled</span>
+                  </li>
+                  <li>
+                    <span class="check-icon-green">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width: 13px; height: 13px;">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                    <span>Smart Booking Configured</span>
+                  </li>
+                </ul>
+                <p class="pricing-platform-note">
+                  Includes access to the complete Capere AI platform, with
+                  additional business tools available as your business grows.
+                </p>
+              </div>
 
-    <!-- FAQ Accordion Section -->
-    <section class="faq-section" id="faq">
-      <div class="bg-grid-container">
-        <div class="bg-grid-line-v" style="left: 0%;"></div>
-        <div class="bg-grid-line-v" style="left: 25%;"></div>
-        <div class="bg-grid-line-v" style="left: 50%;"></div>
-        <div class="bg-grid-line-v" style="left: 75%;"></div>
-        <div class="bg-grid-line-v" style="left: 100%;"></div>
-        <div class="bg-grid-line-h" style="top: 30%;"></div>
-        <div class="bg-grid-line-h" style="top: 70%;"></div>
-        <div class="bg-grid-box" style="right: -100px; top: 15%;"></div>
-        <div class="bg-grid-box" style="right: -80px; top: 60%;"></div>
-      </div>
-      <div class="container">
-        <div class="text-align-center reveal-zoom">
-          <span class="cursive-tagline">FAQ</span>
-          <h2 class="section-title">Frequently Asked Questions</h2>
-        </div>
-        
-        <div class="faq-bg-image-wrapper reveal-left">
-          <img src="assets/FAQ-image.png" alt="FAQ support background graphic" class="faq-bg-image">
-        </div>
-
-        <div class="faq-accordion reveal-right">
-          
-          <div class="faq-item">
-            <button class="faq-question" id="faq-q1">
-              <span>Is Capere AI a marketing agency or a software platform?</span>
-              <span class="faq-icon">
-                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-content">
-                <p>Capere AI is the growth infrastructure for your business. We set up visibility engines to help local customers find you, backed by automated response capture systems that turn those visitors into booked appointments on autopilot.</p>
+              <!-- Value Callout Glass Card -->
+              <div class="value-callout-card">
+                <div class="glass-card-glow"></div>
+                <h6 class="value-callout-title">You're Not Buying Software.</h6>
+                <p class="value-callout-body">
+                  You're not buying another marketing tool. You're installing the foundation that helps your business capture more customers, respond faster, and turn every future marketing dollar into more revenue.
+                </p>
               </div>
             </div>
           </div>
-          
-          <div class="faq-item">
-            <button class="faq-question" id="faq-q2">
-              <span>What does the first month's payment cover?</span>
-              <span class="faq-icon">
-                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-content">
-                <p>Your first payment of $997 covers both the complete setup (onboarding, database configuration, missed-call assistant integration, and visibility page launches) and your first full month of service. Starting in month 2, your subscription rolls into a flat $497/mo.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="faq-item">
-            <button class="faq-question" id="faq-q3">
-              <span>Why are location pages unlimited? Is there any catch?</span>
-              <span class="faq-icon">
-                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-content">
-                <p>There is no catch. Once your local templates are configured, you can expand into more service areas without extra work. We host and optimize all your locations under one plan.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="faq-item">
-            <button class="faq-question" id="faq-q4">
-              <span>What support guarantees do we receive under the system package?</span>
-              <span class="faq-icon">
-                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-content">
-                <p>We monitor your growth infrastructure 24/7. Your subscription includes search visibility maintenance, automated review generation, structural diagnostics, and priority support to ensure your system runs smoothly.</p>
-              </div>
-            </div>
-          </div>
-          
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
+      <!-- Comparison Matrix Section -->
+      <section class="comparison-section">
+        <div class="container">
+          <div class="text-align-center reveal-zoom">
+            <span class="cursive-tagline">Why Capere AI Is Different</span>
+            <h2 class="section-title">Why Businesses Choose Capere AI</h2>
+            <p class="section-desc max-width-600">
+              A complete operating foundation replaces multiple single-purpose
+              subscriptions and expensive retainers.
+            </p>
+          </div>
 
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="container footer-grid reveal">
-      <div class="footer-left">
-        <a href="#" class="logo-link">
-          <img src="assets/logo.png" alt="Capere AI logo mark" class="logo-icon-img">
-          <span class="logo-text">apere <span class="accent-text">AI</span></span>
-        </a>
-        <p class="footer-tag">Capere AI is the growth infrastructure for local service businesses—helping you plug profit leaks, automate bookings, and scale visibility.</p>
-        <!-- <div class="system-status-indicator"> -->
-          <!-- <span class="status-dot"></span> All Systems Operational -->
-        <!-- </div> -->
-      </div>
-      
-      <div class="footer-links">
-        <h5>Product</h5>
-        <a href="#simulator-section">Lead Recovery</a>
-        <a href="#why-convert">Why Capere AI</a>
-        <a href="#future-proof">Growth System</a>
-        <a href="#roi-calculator">Calculate ROI</a>
-      </div>
-      
-      <div class="footer-links">
-        <h5>Resources</h5>
-        <a href="#pricing">Pricing Plans</a>
-        <a href="#faq">FAQ Help Desk</a>
-        <a href="#" onclick="openDemoModal()">Book 15min Strategy</a>
-        <a href="#" onclick="openDemoModal()">Founding Program</a>
-      </div>
-      
-      <div class="footer-cta-column">
-        <h5>Plug Your Profit Leaks</h5>
-        <p class="cta-column-text">Stop losing customers to faster competitors. Establish your growth system today.</p>
-        <button class="btn btn-primary btn-small btn-block" onclick="openDemoModal()" style="margin-top: var(--space-xs);">Book Consultation</button>
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <div class="container footer-bottom-container">
-        <p class="copyright">&copy; 2026 Capere AI. All rights reserved.</p>
-        <div class="footer-legal-links">
-          <a href="#">Privacy Policy</a>
-          <span class="legal-separator">•</span>
-          <a href="#">Terms of Service</a>
-          <span class="legal-separator">•</span>
-          <a href="#">Security Audit</a>
+          <div class="comparison-table-wrapper reveal-zoom">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Outcome</th>
+                  <th class="table-highlight">Capere AI</th>
+                  <th>Traditional Approach</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Lead Response Time</strong></td>
+                  <td class="table-highlight text-green">
+                    <div class="table-cell-content">
+                      <span class="table-icon-check">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span>Instant replies in under 15 seconds</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table-cell-content">
+                      <span class="table-icon-cross">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                        >
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </span>
+                      <span>Hours or days later</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Lead Capture</strong></td>
+                  <td class="table-highlight text-green">
+                    <div class="table-cell-content">
+                      <span class="table-icon-check">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span>24/7 automated lead recovery</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table-cell-content">
+                      <span class="table-icon-cross">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                        >
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </span>
+                      <span>Missed calls and lost opportunities</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Scheduling</strong></td>
+                  <td class="table-highlight text-green">
+                    <div class="table-cell-content">
+                      <span class="table-icon-check">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span>Automated booking & follow-ups</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table-cell-content">
+                      <span class="table-icon-cross">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                        >
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </span>
+                      <span>Manual scheduling and reminders</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Service Area Growth</strong></td>
+                  <td class="table-highlight text-green">
+                    <div class="table-cell-content">
+                      <span class="table-icon-check">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span
+                        >Expand into new areas without rebuilding pages</span
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table-cell-content">
+                      <span class="table-icon-cross">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                        >
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </span>
+                      <span>Additional pages and ongoing agency work</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Customer Communication</strong></td>
+                  <td class="table-highlight text-green">
+                    <div class="table-cell-content">
+                      <span class="table-icon-check">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span>Every conversation in one inbox</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table-cell-content">
+                      <span class="table-icon-cross">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                        >
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </span>
+                      <span>Messages scattered across multiple channels</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Marketing ROI</strong></td>
+                  <td class="table-highlight text-green">
+                    <div class="table-cell-content">
+                      <span class="table-icon-check">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span>Every marketing dollar works harder</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table-cell-content">
+                      <span class="table-icon-cross">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                        >
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </span>
+                      <span>More spending to get the same results</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="highlight-total-row">
+                  <td><strong>Investment</strong></td>
+                  <td class="table-highlight text-accent">
+                    <strong>$997 Implementation + $497/mo</strong>
+                  </td>
+                  <td>
+                    <strong
+                      >Typically $1,500–$3,000+/month across multiple
+                      vendors</strong
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-    </div>
-  </footer>
+      </section>
 
-  <!-- Booking Calendar Modal -->
-  <div class="modal-overlay" id="demo-modal">
-    <div class="modal-card">
-      <button class="modal-close" onclick="closeDemoModal()">&times;</button>
-      <div class="modal-grid">
-        <div class="modal-sidebar">
+      <!-- Booking Section -->
+      <section class="booking-section" id="book-call">
+        <div class="container">
+          <div class="booking-grid">
+            <!-- Left Side: Copy and Agenda -->
+            <div class="booking-left reveal-left">
+              <span class="cursive-tagline text-accent">Free Strategy Call</span>
+              <h2 class="section-title">Book Your Free 15-Minute Growth Strategy Call</h2>
+              <p class="section-desc text-secondary">
+                Discover how your business can capture more leads, automate follow-ups, and convert more customers in just 15 minutes.
+              </p>
+              
+              <div class="booking-bullets">
+                <div class="bullet">
+                  <span class="bullet-check">✓</span>
+                  <span>Capture More Leads Automatically</span>
+                </div>
+                <div class="bullet">
+                  <span class="bullet-check">✓</span>
+                  <span>Never Miss Another Customer Inquiry</span>
+                </div>
+                <div class="bullet">
+                  <span class="bullet-check">✓</span>
+                  <span>Complete Setup in 7 Days</span>
+                </div>
+              </div>
+
+              <div class="booking-agenda">
+                <h5>In this 15-minute call you'll:</h5>
+                <ul class="agenda-list">
+                  <li>Review your current online presence</li>
+                  <li>Identify where you're losing leads</li>
+                  <li>Show how Capere AI can help capture more customers.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Right Side: Embedded Form Card -->
+            <div class="booking-right reveal-right">
+              <div class="booking-card">
+                <form id="booking-form" onsubmit="handleBookingSubmit(event)">
+                  <h4 class="form-title">Schedule Your Strategy Call</h4>
+
+                  <div class="form-group">
+                    <label for="form-business-name">Business Name</label>
+                    <input
+                      type="text"
+                      id="form-business-name"
+                      name="business_name"
+                      required
+                      class="form-input"
+                      placeholder="e.g. Apex Air Solutions"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="form-name">Your Full Name</label>
+                    <input
+                      type="text"
+                      id="form-name"
+                      name="name"
+                      required
+                      class="form-input"
+                      placeholder="Jane Smith"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="form-phone">Mobile Phone (For the Live Call)</label>
+                    <input
+                      type="tel"
+                      id="form-phone"
+                      name="phone"
+                      required
+                      class="form-input"
+                      placeholder="(555) 000-0000"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="form-business">Business Website or Google Maps Link</label>
+                    <input
+                      type="text"
+                      id="form-business"
+                      name="business"
+                      class="form-input"
+                      placeholder="e.g. mybusiness.com or Google Maps link"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="form-date">Select Date</label>
+                    <input type="date" id="form-date" name="date" required class="form-input" />
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-block">
+                    Book My Free Strategy Call
+                  </button>
+
+                  <p class="form-trust-note">No obligation. No spam. Just a practical growth strategy tailored to your business.</p>
+                </form>
+
+                <div class="success-screen" id="form-success-message">
+                  <div class="success-icon">✓</div>
+                  <h3>Strategy Call Scheduled!</h3>
+                  <p>
+                    Your slot is confirmed. Check your phone—our automated growth
+                    assistant will text your confirmation details in under 15
+                    seconds.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Accordion Section -->
+      <section class="faq-section" id="faq">
+        <div class="bg-grid-container">
+          <div class="bg-grid-line-v" style="left: 0%"></div>
+          <div class="bg-grid-line-v" style="left: 25%"></div>
+          <div class="bg-grid-line-v" style="left: 50%"></div>
+          <div class="bg-grid-line-v" style="left: 75%"></div>
+          <div class="bg-grid-line-v" style="left: 100%"></div>
+          <div class="bg-grid-line-h" style="top: 30%"></div>
+          <div class="bg-grid-line-h" style="top: 70%"></div>
+          <div class="bg-grid-box" style="right: -100px; top: 15%"></div>
+          <div class="bg-grid-box" style="right: -80px; top: 60%"></div>
+        </div>
+        <div class="container">
+          <div class="text-align-center reveal-zoom">
+            <span class="cursive-tagline">FAQ</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+          </div>
+
+          <div class="faq-bg-image-wrapper reveal-left">
+            <img
+              src="assets/FAQ-image.png"
+              alt="FAQ support background graphic"
+              class="faq-bg-image"
+            />
+          </div>
+
+          <div class="faq-accordion reveal-right">
+            <div class="faq-item">
+              <button class="faq-question" id="faq-q1">
+                <span
+                  >Is Capere AI a marketing agency or a software platform?</span
+                >
+                <span class="faq-icon">
+                  <svg
+                    class="faq-chevron"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>
+                    Capere AI is the growth infrastructure for your business. We
+                    set up visibility engines to help local customers find you,
+                    backed by automated response capture systems that turn those
+                    visitors into booked appointments on autopilot.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" id="faq-q2">
+                <span>What does the first month's payment cover?</span>
+                <span class="faq-icon">
+                  <svg
+                    class="faq-chevron"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>
+                    Your first payment of $997 covers both the complete setup
+                    (onboarding, database configuration, missed-call assistant
+                    integration, and visibility page launches) and your first
+                    full month of service. Starting in month 2, your
+                    subscription rolls into a flat $497/mo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" id="faq-q3">
+                <span
+                  >Why are location pages unlimited? Is there any catch?</span
+                >
+                <span class="faq-icon">
+                  <svg
+                    class="faq-chevron"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>
+                    There is no catch. Once your local templates are configured,
+                    you can expand into more service areas without extra work.
+                    We host and optimize all your locations under one plan.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" id="faq-q4">
+                <span
+                  >What support guarantees do we receive under the system
+                  package?</span
+                >
+                <span class="faq-icon">
+                  <svg
+                    class="faq-chevron"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>
+                    We monitor your growth infrastructure 24/7. Your
+                    subscription includes search visibility maintenance,
+                    automated review generation, structural diagnostics, and
+                    priority support to ensure your system runs smoothly.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" id="faq-q4">
+                <span>How long before I see results?</span>
+                <span class="faq-icon">
+                  <svg
+                    class="faq-chevron"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>
+                    Your growth infrastructure is typically installed within 7
+                    days. Improvements in lead response and customer
+                    communication begin immediately after launch, while local
+                    search visibility generally improves over the following
+                    weeks as optimizations take effect.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container footer-grid reveal">
+        <div class="footer-left">
           <a href="#" class="logo-link">
-            <img src="assets/logo.png" alt="Capere AI logo mark" class="logo-icon-img">
-            <span class="logo-text">apere <span class="accent-text">AI</span></span>
+            <img
+              src="assets/logo.png"
+              alt="Capere AI logo mark"
+              class="logo-icon-img"
+            />
+            <span class="logo-text"
+              >apere <span class="accent-text">AI</span></span
+            >
           </a>
-          <h4>Book a 15-Minute Strategy Demo</h4>
-          <p class="modal-desc">See how Capere AI automates missed-call capture, simplifies lead follow-up, and helps you win more local customers.</p>
-          <div class="modal-feature-bullets">
-            <div class="bullet">✓ 24/7 Automated Missed-Call Recovery</div>
-            <div class="bullet">✓ Google Business Profile & Local SEO Engine</div>
-            <div class="bullet">✓ Complete Onboarding & Setup Included</div>
-          </div>
+          <p class="footer-tag">
+            Capere AI is the growth infrastructure for local service
+            businesses—helping you plug profit leaks, automate bookings, and
+            scale visibility.
+          </p>
+          <!-- <div class="system-status-indicator"> -->
+          <!-- <span class="status-dot"></span> All Systems Operational -->
+          <!-- </div> -->
         </div>
-        
-        <div class="modal-content-form">
-          <form id="booking-form" onsubmit="handleBookingSubmit(event)">
-            <h4 class="form-title">Schedule a Live Demo</h4>
-            
 
-            
-            <div class="form-group">
-              <label for="form-name">Your Full Name</label>
-              <input type="text" id="form-name" required class="form-input" placeholder="Jane Smith">
-            </div>
-            
-            <div class="form-group">
-              <label for="form-phone">Mobile Phone (For the Live Demo Call)</label>
-              <input type="tel" id="form-phone" required class="form-input" placeholder="(555) 000-0000">
-            </div>
-            
-            <div class="form-group">
-              <label for="form-business">Business Website or Google Maps Link</label>
-              <input type="text" id="form-business" class="form-input" placeholder="e.g. mybusiness.com or Google Maps link">
-            </div>
-            
-            <div class="form-group">
-              <label for="form-date">Select Date</label>
-              <input type="date" id="form-date" required class="form-input">
-            </div>
-            
+        <div class="footer-links">
+          <h5>Product</h5>
+          <a href="#simulator-section">Lead Recovery</a>
+          <a href="#why-convert">Why Capere AI</a>
+          <a href="#future-proof">Growth System</a>
+          <a href="#roi-calculator">Calculate ROI</a>
+        </div>
 
-            
-            <button type="submit" class="btn btn-primary btn-block">Schedule Demo</button>
-          </form>
-          
-          <div class="success-screen" id="form-success-message">
-            <div class="success-icon">✓</div>
-            <h3>Demo Scheduled!</h3>
-            <p>Your slot is confirmed. Check your phone—our automated recovery assistant will text your confirmation details in under 15 seconds.</p>
-            <button type="button" class="btn btn-secondary btn-block" onclick="closeDemoModal()">Close Window</button>
+        <div class="footer-links">
+          <h5>Resources</h5>
+          <a href="#pricing">Pricing Plans</a>
+          <a href="#onboarding">Our Process</a>
+          <a href="#faq">FAQ Help Desk</a>
+          <a href="#" onclick="openDemoModal()">Book a Strategy Call</a>
+          <a href="#" onclick="openDemoModal()">Founding Program</a>
+        </div>
+
+        <div class="footer-cta-column">
+          <h5>Plug Your Profit Leaks</h5>
+          <p class="cta-column-text">
+            Stop losing customers to faster competitors. Establish your growth
+            system today.
+          </p>
+          <button
+            class="btn btn-primary btn-small btn-block"
+            onclick="openDemoModal()"
+            style="margin-top: var(--space-xs)"
+          >
+            Book a Strategy Call
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-container">
+          <p class="copyright">&copy; 2026 Capere AI. All rights reserved.</p>
+          <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <span class="legal-separator">•</span>
+            <a href="#">Terms of Service</a>
+            <span class="legal-separator">•</span>
+            <a href="#">Security Audit</a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </footer>
 
-  <!-- JavaScript Bundle -->
-  <script src="index.js"></script>
-</body>
+
+
+    <!-- JavaScript Bundle -->
+    <script src="index.js?v=1.0.4"></script>
+  </body>
 </html>
